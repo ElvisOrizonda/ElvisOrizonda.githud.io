@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div style="text-align: center;">
+
+      <h1>Registrarse</h1>
+    </div>
+    <form [formGroup]="form" (submit)="aceptar()">
+
+      <mat-form-field class="example-full-width">
+        <mat-label>ID</mat-label>
+        <input matInput required placeholder="ID" formControlName="id">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>DNI</mat-label>
+        <input matInput required placeholder="DNI" formControlName="dni">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Usuario</mat-label>
+        <input matInput required placeholder="Usuario" formControlName="usuario">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput required placeholder="Nombre" formControlName="nombre">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput required placeholder="Email@gmail.com" formControlName="correo">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Contraseña</mat-label>
+        <input matInput required placeholder="Contraseña" formControlName="contraseña">
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <mat-label>Select</mat-label>
+        <mat-select name="tipo" formControlName="tipo">
+          <mat-option value="admin">admin</mat-option>
+          <mat-option value="estudiante">estudiante</mat-option>
+          <mat-option value="reclutador">reclutador</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Key</mat-label>
+        <input matInput required placeholder="123" formControlName="key">
+      </mat-form-field>
+      <br>
+      <div style="text-align: center;">
+        <button mat-raised-button class="color1">Aceptar</button>
+        <button mat-raised-button class="color2" routerLink="/usuarios">Cancelar</button>
+      <br>
+      </div>
+      <p>{{mensaje}}</p>
+    </form>
+  </div>
+</body>
+</html>

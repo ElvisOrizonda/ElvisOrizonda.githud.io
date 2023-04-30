@@ -1,0 +1,11 @@
+mat-form-field {
+  width: 95%;
+}
+.mat-mdc-raised-button.color1 {
+  background-color:#ff1e57 ;
+  color:white;
+}
+.mat-mdc-raised-button.color2 {
+  background-color:#333333 ;
+  color:white;
+}

@@ -1,0 +1,37 @@
+<div *ngIf="open">
+  <header>
+    <a href="#">
+      <img src="./assets/icono.png" alt="logo" class="logo">
+    </a>
+    <input type="checkbox" class="mostrar_menu" id="toggle">
+    <label class="i" for="toggle">
+      <mat-icon class="icon">menu</mat-icon>
+    </label>
+    <nav class="navegation">
+      <ul class="nav_menu">
+        <li><a href="#Inicio" >Home</a></li>
+        <li><a href="#Nosotros" >Nosotros</a></li>
+        <li><a href="#Servicios" >Servicios</a></li>
+        <li><a href="/login">Ingresar</a></li>
+        <li><a href="/registrar-usuario" >Registrate</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<section class="CRUD">
+  <div>
+    <nav mat-tab-nav-bar ngClass = "tabs" *ngIf="open">
+      <a mat-tab-link routerLink="/Empresa" routerLinkActive="active-link">Empresa</a>
+      <a mat-tab-link routerLink="/usuarios" routerLinkActive="active-link">Usuario</a>
+      <a mat-tab-link routerLink="/requisitos" routerLinkActive="active-link">Requisito</a>
+      <a mat-tab-link routerLink="/Calificacion" routerLinkActive="active-link">Calificacion</a>
+      <a mat-tab-link routerLink="/Institucion" routerLinkActive="active-link">Institucion</a>
+      <a mat-tab-link routerLink="/carreras" routerLinkActive="active-link">Carrera</a>
+    </nav>
+  </div>
+</section>
+<div>
+  <br>
+  <router-outlet></router-outlet>
+</div>
+

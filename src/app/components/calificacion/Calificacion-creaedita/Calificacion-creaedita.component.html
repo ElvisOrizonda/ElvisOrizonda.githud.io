@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div style="text-align: center;">
+
+      <h1>Registro de Calificaciones</h1>
+    </div>
+    <form [formGroup]="form" (submit)="aceptar()">
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Código</mat-label>
+        <input matInput required placeholder="Código" formControlName="id">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Estudiante</mat-label>
+        <input matInput required placeholder="Estudiante" formControlName="id_Estudiante">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Calificacion:</mat-label>
+        <input matInput required placeholder="Calificacion" formControlName="Calificacion">
+      </mat-form-field>
+      <br>
+      <br>
+      <div style="text-align: center;">
+
+      <button mat-raised-button class="color1">Aceptar</button>
+      <button mat-raised-button class="color2" routerLink="/Calificacion">Cancelar</button>
+      <br>
+      </div>
+      <p>{{mensaje}}</p>
+    </form>
+  </div>
+</body>
+
+</html>

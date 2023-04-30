@@ -1,0 +1,17 @@
+.logo {
+  height: 130px;
+  margin-bottom: 10px;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding-bottom: 155px;
+}
+.btn {
+  background-color:#ff1e57 ;
+  color: white;
+}
+
